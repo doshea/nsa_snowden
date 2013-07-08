@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: nsa_snowden_development
+  pool: 5
+  username: dylanoshea
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: nsa_snowden_test
+  pool: 5
+  username: dylanoshea
+  password:

@@ -1,0 +1,1 @@
+Sighting.delete_all
