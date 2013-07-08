@@ -1,37 +1,25 @@
-var map;
+var snowden_map = {
 
-  function display_map(lat, lng) {
+  map: null,
+
+  'display_map': function (lat, lng) {
     var mapOptions = {
       center: new google.maps.LatLng(lat, lng),
       zoom: 14,
       mapTypeId: google.maps.MapTypeId.HYBRID
     };
     var canvas = $('#map-canvas')[0];
-    map = new google.maps.Map(canvas, mapOptions);
-  }
+    snowden_map.map = new google.maps.Map(canvas, mapOptions);
+  },
 
-  function add_marker(lat, lng, title){
+  add_marker: function(lat, lng, title) {
     var latlng = new google.maps.LatLng(lat, lng);
     new google.maps.Marker({
       position: latlng,
-      map: map,
+      map: snowden_map.map,
       title: title
-      });
+    });
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

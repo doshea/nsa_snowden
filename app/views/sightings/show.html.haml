@@ -4,5 +4,6 @@
 #map-canvas
 
 :javascript
-  display_map(#{@sighting.latitude}, #{@sighting.longitude})
-  add_marker(#{@sighting.latitude}, #{@sighting.longitude}, "#{@sighting.location}")
+  snowden_map.display_map(#{@sighting.latitude}, #{@sighting.longitude})
+
+  snowden_map.add_marker(#{@sighting.latitude}, #{@sighting.longitude}, "#{@sighting.location}")
