@@ -1,0 +1,7 @@
+%h1
+  Sighting No. #{@sighting.id}
+
+#map-canvas
+
+:javascript
+  display_map(#{@sighting.latitude}, #{@sighting.longitude})

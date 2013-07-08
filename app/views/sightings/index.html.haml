@@ -1,4 +1,38 @@
 %h1
   Where's Edward?
 
-= image_tag 'edward.jpg'
+= image_tag 'edward.jpg', height: '350px'
+
+%table
+  %thead
+    %th Sighting ID
+    %th Location
+    %th Latitude
+    %th Longitude
+  %tbody
+    - @sightings.each do |sighting|
+      %tr
+        %td
+          = link_to sighting.id, sighting
+        %td
+          = link_to sighting.location, sighting
+        %td
+          = sighting.latitude
+        %td
+          = sighting.longitude
+
+/ breaks so people in the back can see
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
