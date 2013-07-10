@@ -22,10 +22,19 @@ class SightingsController < ApplicationController
   def update
     @sighting = Sighting.find(params[:id])
     if @sighting.update_attributes(params[:sighting])
-      redirect_to @sighting  #redirect to show page
+      respond_to do |format|
+        format.js
+        format.html { redirect_to sightings_path }
+      end
     else
       render :edit
     end
   end
 
 end
+
+
+
+
+
+
