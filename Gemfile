@@ -5,7 +5,7 @@ gem 'rails', '3.2.13'
 #A terrific gem for turning  https://github.com/alexreisner/geocoder
 gem 'geocoder'
 
-gem 'nokogiri'
+gem 'nokogiri', '1.5.0'
 gem 'pg'
 gem 'jquery-rails'
 gem 'haml'
@@ -13,7 +13,7 @@ gem 'bcrypt-ruby'
 
 #image upload gems
 gem 'carrierwave'
-gem 'fog'
+gem 'fog', '1.12'
 gem 'remotipart'
 gem 'rmagick'
 
