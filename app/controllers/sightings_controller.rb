@@ -1,4 +1,12 @@
 class SightingsController < ApplicationController
+
+  #Example method to show that you can make whatever methods you want, doing whatever AJAXy stuff you want
+  def whatever
+    #you can do anything you want on the server here
+    #because I'll call this expecting JS, it will render the whatever.js.erb template by default
+  end
+
+
   def index
     @sightings = Sighting.all
   end
